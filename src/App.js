@@ -1,4 +1,6 @@
 import React from 'react';
+import Recorder from './Recorder'
+
 const recordAudio = async () => {
     console.log('recording')
     const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -143,7 +145,7 @@ function App() {
             <button>Stop</button>
             <button>Play</button>
             <button>Save</button>
-
+            <Recorder />
 
         </>
     );
